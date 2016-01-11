@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2ACE3FB1C43788D00308918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ACE3FA1C43788D00308918 /* AppDelegate.swift */; };
+		A2ACE3FD1C43788D00308918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ACE3FC1C43788D00308918 /* ViewController.swift */; };
+		A2ACE4001C43788D00308918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ACE3FE1C43788D00308918 /* Main.storyboard */; };
+		A2ACE4021C43788D00308918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2ACE4011C43788D00308918 /* Assets.xcassets */; };
+		A2ACE4051C43788D00308918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ACE4031C43788D00308918 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2ACE3F71C43788D00308918 /* Shakey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shakey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2ACE3FA1C43788D00308918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2ACE3FC1C43788D00308918 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2ACE3FF1C43788D00308918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2ACE4011C43788D00308918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2ACE4041C43788D00308918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2ACE4061C43788D00308918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2ACE3F41C43788D00308918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2ACE3EE1C43788D00308918 = {
+			isa = PBXGroup;
+			children = (
+				A2ACE3F91C43788D00308918 /* Shakey */,
+				A2ACE3F81C43788D00308918 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2ACE3F81C43788D00308918 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2ACE3F71C43788D00308918 /* Shakey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2ACE3F91C43788D00308918 /* Shakey */ = {
+			isa = PBXGroup;
+			children = (
+				A2ACE3FA1C43788D00308918 /* AppDelegate.swift */,
+				A2ACE3FC1C43788D00308918 /* ViewController.swift */,
+				A2ACE3FE1C43788D00308918 /* Main.storyboard */,
+				A2ACE4011C43788D00308918 /* Assets.xcassets */,
+				A2ACE4031C43788D00308918 /* LaunchScreen.storyboard */,
+				A2ACE4061C43788D00308918 /* Info.plist */,
+			);
+			path = Shakey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2ACE3F61C43788D00308918 /* Shakey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2ACE4091C43788D00308918 /* Build configuration list for PBXNativeTarget "Shakey" */;
+			buildPhases = (
+				A2ACE3F31C43788D00308918 /* Sources */,
+				A2ACE3F41C43788D00308918 /* Frameworks */,
+				A2ACE3F51C43788D00308918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shakey;
+			productName = Shakey;
+			productReference = A2ACE3F71C43788D00308918 /* Shakey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2ACE3EF1C43788D00308918 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Andrew Konoff";
+				TargetAttributes = {
+					A2ACE3F61C43788D00308918 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = A2ACE3F21C43788D00308918 /* Build configuration list for PBXProject "Shakey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2ACE3EE1C43788D00308918;
+			productRefGroup = A2ACE3F81C43788D00308918 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2ACE3F61C43788D00308918 /* Shakey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2ACE3F51C43788D00308918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ACE4051C43788D00308918 /* LaunchScreen.storyboard in Resources */,
+				A2ACE4021C43788D00308918 /* Assets.xcassets in Resources */,
+				A2ACE4001C43788D00308918 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2ACE3F31C43788D00308918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ACE3FD1C43788D00308918 /* ViewController.swift in Sources */,
+				A2ACE3FB1C43788D00308918 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2ACE3FE1C43788D00308918 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2ACE3FF1C43788D00308918 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2ACE4031C43788D00308918 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2ACE4041C43788D00308918 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2ACE4071C43788D00308918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2ACE4081C43788D00308918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2ACE40A1C43788D00308918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shakey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andkon.Shakey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2ACE40B1C43788D00308918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shakey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andkon.Shakey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2ACE3F21C43788D00308918 /* Build configuration list for PBXProject "Shakey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2ACE4071C43788D00308918 /* Debug */,
+				A2ACE4081C43788D00308918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2ACE4091C43788D00308918 /* Build configuration list for PBXNativeTarget "Shakey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2ACE40A1C43788D00308918 /* Debug */,
+				A2ACE40B1C43788D00308918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2ACE3EF1C43788D00308918 /* Project object */;
+}
