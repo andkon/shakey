@@ -22,10 +22,24 @@
                                 <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-Qd-o8S">
+                                <rect key="frame" x="20" y="599" width="45" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Fq2-01-Do6"/>
+                                    <constraint firstAttribute="width" constant="45" id="kT7-J6-2iL"/>
+                                </constraints>
+                                <state key="normal" image="reverse"/>
+                                <connections>
+                                    <action selector="changeCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ai-XM-BjP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="tsT-Qd-o8S" secondAttribute="leading" id="6G6-bg-zDG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tsT-Qd-o8S" secondAttribute="bottom" constant="20" id="9GC-MH-9Eh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ub4-C9-las" secondAttribute="trailing" constant="-20" id="Ois-P8-Y1h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ub4-C9-las" secondAttribute="bottom" id="aIm-tL-3F7"/>
                             <constraint firstItem="ub4-C9-las" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="w9A-pl-hHl"/>
@@ -43,6 +57,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="reverse" width="45" height="48"/>
         <image name="shake" width="320" height="568"/>
     </resources>
 </document>
