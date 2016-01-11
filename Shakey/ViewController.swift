@@ -195,6 +195,7 @@ class ViewController: UIViewController {
             } else {
                 if fabs(userAcceleration.x) > accelerationThreshold && fabs(userAcceleration.y) > accelerationThreshold && fabs(userAcceleration.z) > accelerationThreshold {
                     print("Shook hard.")
+                    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
                     self.snapStillImage()
                     self.shookHard = true
                     let img = UIImage(named: "stop")
