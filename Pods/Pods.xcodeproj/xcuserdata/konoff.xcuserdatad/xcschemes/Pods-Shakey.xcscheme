@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E6C77CB33D8C50A5E6A48384'
+               BlueprintIdentifier = 'ECC1B13715D117DCBCD83851'
                BlueprintName = 'Pods-Shakey'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Shakey.framework'>

@@ -21,8 +21,8 @@ enum CamUIState: Int {
 let CapturingStillImageContext = UnsafeMutablePointer<()>()
 let SessionRunningAndDeviceAuthorizedContext = UnsafeMutablePointer<()>()
 
-let accelerationThreshold = 1.0
-let decelerationThreshold = 0.5
+let accelerationThreshold = 2.0 // lower is easier - 4.0 is good for prod
+let decelerationThreshold = 0.2 // higher is easier - 0.07 is good for prod
 
 extension AVCaptureVideoOrientation {
     var uiInterfaceOrientation: UIInterfaceOrientation {
@@ -133,7 +133,8 @@ class ViewController: UIViewController {
     
     func switchToUI(state: CamUIState) {
         if state == CamUIState.TakePic {
-            
+            self.overlayImage.image = nil
+            self.captureSession.startRunning()
         } else if state == CamUIState.CaptionOrPost {
             dispatch_async(self.sessionQueue, { () -> Void in
                 self.captureSession.stopRunning()
@@ -242,9 +243,46 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeCamera(sender: AnyObject) {
-        
+        dispatch_async(self.sessionQueue) { 
+            let currentVideoDevice : AVCaptureDevice = self.videoDeviceInput!.device
+            var preferredPosition : AVCaptureDevicePosition = AVCaptureDevicePosition.Unspecified
+            let currentPosition : AVCaptureDevicePosition = currentVideoDevice.position
+            
+            switch currentPosition {
+            case AVCaptureDevicePosition.Unspecified:
+                preferredPosition = AVCaptureDevicePosition.Back
+                break
+            case AVCaptureDevicePosition.Back:
+                preferredPosition = AVCaptureDevicePosition.Front
+                break
+            case AVCaptureDevicePosition.Front:
+                preferredPosition = AVCaptureDevicePosition.Back
+                break
+            }
+            
+            let videoDevice = ViewController.deviceWithMediaType(AVMediaTypeVideo, preferringPosition: preferredPosition)
+            let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice)
+            
+            // configure and remove capture session
+            self.captureSession.beginConfiguration()
+            self.captureSession.removeInput(self.videoDeviceInput)
+            
+            if self.captureSession.canAddInput(videoDeviceInput) {
+                NSNotificationCenter.defaultCenter().removeObserver(self, name: AVCaptureDeviceSubjectAreaDidChangeNotification, object: currentVideoDevice)
+                self.captureSession.addInput(videoDeviceInput)
+                self.videoDeviceInput = videoDeviceInput
+            } else {
+                self.captureSession.addInput(self.videoDeviceInput)
+            }
+            self.captureSession.commitConfiguration()
+        }
     }
     
+    @IBAction func xButtonPressed(sender: AnyObject) {
+        self.switchToUI(CamUIState.TakePic)
+        self.addObserver(self, forKeyPath: "sessionRunningAndDeviceAuthorized", options: [NSKeyValueObservingOptions.Old, NSKeyValueObservingOptions.New], context: SessionRunningAndDeviceAuthorizedContext)
+        self.addObserver(self, forKeyPath: "stillImageOutput.capturingStillImage", options: [NSKeyValueObservingOptions.Old, NSKeyValueObservingOptions.New], context: CapturingStillImageContext)
+    }
 
 
 }
